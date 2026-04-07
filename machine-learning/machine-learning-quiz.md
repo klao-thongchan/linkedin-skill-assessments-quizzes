@@ -989,3 +989,111 @@ Which of these statements do you agree with?
 - [x] All of the above
 
 **Explanation:** All of the above techniques are different ways of imputing the missing values.
+
+#### Q127. What is the main purpose of using regularization in machine learning models?
+
+a) To increase the complexity of the model
+b) To reduce the variance of the model
+c) To increase the bias of the model
+d) To reduce the computational cost of the model
+
+**Explanation:**
+The correct answer is b) To reduce the variance of the model.
+
+Regularization is a technique used in machine learning to prevent overfitting, which occurs when a model becomes too complex and fits the training data too closely, resulting in poor generalization to new, unseen data. By adding a regularization term to the loss function, the model is encouraged to learn simpler, more generalizable patterns, thereby reducing the variance of the model.
+
+#### Q128. In the context of decision trees, what is the purpose of pruning?
+
+a) To increase the depth of the tree
+b) To reduce the number of leaf nodes
+c) To increase the number of internal nodes
+d) To reduce the complexity of the tree
+
+**Explanation:**
+The correct answer is d) To reduce the complexity of the tree.
+
+Pruning is a technique used in decision tree learning to simplify the tree by removing branches that do not significantly improve the performance of the model. This is done to prevent overfitting and improve the generalization of the model to new, unseen data. By reducing the complexity of the tree, pruning can help improve the interpretability and efficiency of the model.
+
+#### Q129. You built a classification model and noticed that it performs very well on the training data but poorly on unseen test data. What problem does your model likely have?
+
+a) Overfitting  
+b) Underfitting  
+c) High bias  
+d) Low variance
+
+**Explanation:**
+The correct answer is a) Overfitting
+
+High training accuracy but low testing accuracy indicates that the model memorized rather than generalized — a clear sign of overfitting.
+
+#### Q130. When using gradient descent, which of the following will happen if the learning rate is too high?
+
+a) The algorithm may overshoot the minimum and fail to converge  
+b) The algorithm will converge more slowly but more accurately  
+c) The model will underfit the data  
+d) The gradient will become zero
+
+**Explanation:**
+The correct answer is a) The algorithm may overshoot the minimum and fail to converge
+
+A large learning rate makes steps too big, causing oscillations or divergence.
+
+#### Q131. What is the main goal of dimensionality reduction?
+
+a) Reduce the number of input features while retaining important information  
+b) Increase model complexity  
+c) Improve bias at the cost of variance  
+d) Remove all correlations between features
+
+**Explanation:**
+The correct answer is a) Reduce the number of input features while retaining important information
+
+Techniques like PCA aim to compress data by keeping maximum variance with fewer features.
+
+#### Q132. Which of these metrics is **not** suitable for evaluating a regression model?
+
+a) Accuracy  
+b) RMSE  
+c) MAE  
+d) R²
+
+**Explanation:**
+The correct answer is a) Accuracy.
+
+Accuracy is only meaningful for classification, not regression.
+
+#### Q133. You are developing a reinforcement learning model. What is the main component that guides the learning process?
+
+a) Loss function  
+b) Reward function  
+c) Activation function  
+d) Clustering function
+
+**Explanation:**
+The correct answer is b) Reward function.
+
+The reward function provides feedback based on actions taken, guiding the agent’s learning.
+
+#### Q134. What is a confusion matrix used for?
+
+a) Evaluating classification model performance  
+b) Measuring model bias  
+c) Checking data imbalance  
+d) Computing correlation
+
+**Explanation:**
+The correct answer is a) Evaluating classification model performance
+
+It summarizes true/false positives and negatives, helping analyze accuracy, precision, and recall.
+
+#### Q135. You trained a neural network and noticed it performs worse as you add more layers. What might be happening?
+
+a) Vanishing/exploding gradients  
+b) Overfitting  
+c) High bias  
+d) Batch normalization error
+
+**Explanation:**
+The correct answer is a) Vanishing/exploding gradients
+
+Deep networks may suffer gradient issues that prevent proper learning in earlier layers.

@@ -6,9 +6,9 @@
   "author": "Evgeny Bazhanov",
   "license": "MIT",
   "scripts": {
-    "format": "prettier --write ."
+    "format": "prettier --write \"**/*.md\""
   },
   "devDependencies": {
-    "prettier": "^2.7.1"
+    "prettier": "^3.6.2"
   }
 }

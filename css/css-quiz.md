@@ -497,7 +497,7 @@ p {
 
 #### Q35. When using the Flexbox method, what property and value is used to display flex items in a column?
 
-- [x] flex-flow: column; or flex-direction: column
+- [x] flex-flow: column; or flex-direction: column;
 - [ ] flex-flow: column;
 - [ ] flex-column: auto;
 - [ ] flex-direction: column;
@@ -505,9 +505,9 @@ p {
 #### Q36. Which type of declaration will take precedence?
 
 - [ ] any declarations in user-agent stylesheets
-- [x] important declarations in user stylesheets
+- [ ] important declarations in user stylesheets
 - [ ] normal declarations in author stylesheets
-- [ ] important declarations in author stylesheets
+- [x] important declarations in author stylesheets
 
 #### Q37. The flex-direction property is used to specify the direction in which flex items are displayed. What are the values used to specify the direction of the items in the following examples?
 
@@ -633,13 +633,13 @@ font-weight: 700;
 - [ ] light; normal
 - [ ] normal; bolder
 
-#### Q46. Using the:nth-child pseudo class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?
+#### Q46. Using the :nth-child pseudo-class, what would be the most efficient way to style every third item in a list, no matter how many items are present, starting with item 2?
 
 - [ ] A
 
 ```css
 li:nth-child(3 + 2n) {
-  margin: 0 5 px;
+  margin: 0 5px;
 }
 ```
 
@@ -647,7 +647,7 @@ li:nth-child(3 + 2n) {
 
 ```css
 li:nth-child(3n + 2) {
-  margin: 0 5 px;
+  margin: 0 5px;
 }
 ```
 
@@ -657,7 +657,7 @@ li:nth-child(3n + 2) {
 li:nth-child(2),
 li:nth-child(5),
 li:nth-child(8) {
-  margin: 0 5 px;
+  margin: 0 5px;
 }
 ```
 
@@ -665,7 +665,7 @@ li:nth-child(8) {
 
 ```css
 li:nth-child(2n + 3) {
-  margin: 0 5 px;
+  margin: 0 5px;
 }
 ```
 
@@ -1559,7 +1559,7 @@ a[href*='domain.com'] {
 ```css
 .glyphicon-bgcircle {
   circle-radius: 50%;
-  margins: 50px;
+  margin: 50px;
   background-color: #fdadc6;
   color: rgba(255, 255, 255, 1);
   font-size: 24px;
@@ -1595,7 +1595,7 @@ glyphicon-bgcircle {
 ```css
 .glyphicon-bgcircle {
   radius-rounded: 50%;
-  margins: auto;
+  margin: auto;
   background-color: #fdadc6;
   color: rgba(255, 255, 255, 1);
   font-size: 24px;
@@ -1799,7 +1799,7 @@ background-tile: none;
 #### Q118. Which style rule would you apply to set the background image to display the contents of the wood.png file?
 
 - [ ] `background-image: file('wood.png');`
-- [x] `background-image: URL('wood.png');`
+- [x] `background-image: url('wood.png');`
 - [ ] `background-image: wood.png;`
 - [ ] `image: wood.png`
 
@@ -2103,16 +2103,7 @@ img {
 
 [Reference](http://web.simmons.edu/~grovesd/comm244/notes/week4/css-reset)
 
-#### Q131. Which option is an invalid way of declaring a padding value of 10 pixels on the top and bottom, and 0 pixels on the left and right?
-
-- [ ] padding: 10px 0px;
-- [x] padding: 10px 10px 0px 0px;
-- [ ] padding: 10px 0;
-- [ ] padding: 10px 0px 10px 0px;
-
-[Reference](https://www.w3schools.com/css/css_padding.asp)
-
-#### Q132. How would you absolutely position an element of the logo class inside of a relatively positioned container?
+#### Q131. How would you absolutely position an element of the logo class inside of a relatively positioned container?
 
 - [ ] A
 
@@ -2154,7 +2145,7 @@ img {
 }
 ```
 
-#### Q133. How would the `<div>` with the class .child be positioned within its container?
+#### Q132. How would the `<div>` with the class .child be positioned within its container?
 
 ```HTML
 <style>
@@ -2179,7 +2170,7 @@ img {
 
 [Reference](https://codepen.io/harsh1x4/pen/poVaQVz)
 
-#### Q134. By default, a CSS transition is \_\_
+#### Q133. By default, a CSS transition is \_\_
 
 - [ ] asymmetric, so that the transition going from the initial state to the end state is different from the transition going from the end state back to the initial state.
 - [ ] one-sided, so that there is only one transition and it goes from the initial state to the end state.
@@ -2188,7 +2179,7 @@ img {
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
 
-#### Q135. Which style rule will extend the header element across an entire grid row from the first column through the last column?
+#### Q134. Which style rule will extend the header element across an entire grid row from the first column through the last column?
 
 - [ ] A
 
@@ -2224,7 +2215,7 @@ header {
 
 [Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column)
 
-#### Q136. To center the content of a grid cell horizontally and vertically within the cell, which style rule should you apply?
+#### Q135. To center the content of a grid cell horizontally and vertically within the cell, which style rule should you apply?
 
 - [ ] A
 
@@ -2236,7 +2227,7 @@ justify-items: end;
 - [x] B
 
 ```css
-align--items: center;
+align-items: center;
 justify-items: center;
 ```
 
@@ -2256,7 +2247,7 @@ justify-items: stretch;
 
 [Reference for align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items) [Reference for justify-items](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-items)
 
-#### Q137. What style rule should you use to display all input elements that have failed the validation test with a red font?
+#### Q136. What style rule should you use to display all input elements that have failed the validation test with a red font?
 
 - [ ] A
 
@@ -2449,12 +2440,16 @@ input.invalid {
 - [x] Red
 - [ ] Yellow
 
+[Reference: CSS RGB and RGBA Colors](https://www.w3schools.com/css/css_colors_rgb.asp)
+
 #### Q157. What is the correct HTML for referring to an external style sheet?
 
 - [x] `<link rel="stylesheet" type="text/css" href="mystyle.css">`
 - [ ] `<stylesheet>mystyle.css</stylesheet>`
 - [ ] `<style src= "mystyle.css">`
 - [ ] None of these.
+
+[Reference: HTML link tag](https://www.w3schools.com/tags/tag_link.asp) ​ | [HTML Link Tag Syntax for External CSS Files​](https://www.digitalocean.com/community/tutorials/html-link-tag)
 
 #### Q158. The \<link> tag goes inside:
 
@@ -2463,12 +2458,16 @@ input.invalid {
 - [x] the head section
 - [ ] None of the above
 
+[Reference: HTML link tag](https://www.w3schools.com/tags/tag_link.asp)
+
 #### Q159. What is CSS defined in HTML?
 
 - [ ] How to send HTML elements
 - [x] How to display HTML elements
 - [ ] How to save HTML elements
 - [ ] How to make HTML elements
+
+[Reference: CSS Introduction](https://www.w3schools.com/css/css_intro.asp)
 
 #### Q160. Which of the following statements is TRUE for CSS?
 
@@ -2477,12 +2476,16 @@ input.invalid {
 - [ ] Both and b above
 - [ ] An external style sheet can be written in HTML
 
+[Reference: CSS How To](https://www.w3schools.com/css/css_howto.asp)
+
 #### Q161. In CSS, margin collapsing only happens with?
 
 - [ ] The horizontal margins of inline elements in the normal flow.
 - [x] The vertical margins of block elements in the normal flow.
 - [ ] The horizontal margins of block elements in the normal flow.
 - [ ] The vertical margins of inline elements in the normal flow.
+
+[Reference: CSS Margin Collapse](https://www.w3schools.com/css/css_margin_collapse.asp)
 
 #### Q162. Which of the following CSS selectors selects all <p> elements that are the direct child of a <div> element?
 
@@ -2491,12 +2494,16 @@ input.invalid {
 - [ ] Tdiv + p
 - [ ] div ~ p
 
+[Reference: CSS Child Selector](https://www.geeksforgeeks.org/css/css-child-vs-descendant-selectors/)
+
 #### Q163. In CSS, the box-sizing property is used to control how an element's total width and height are calculated. Which value of box-sizing includes the element's padding and border within its total width and height?
 
 - [ ] content-box
 - [ ] padding-box
 - [ ] margin-box
 - [x] border-box
+
+[Reference: CSS box-sizing Property](https://www.geeksforgeeks.org/css/css-box-sizing-property/)
 
 #### Q164. In CSS, which of the following is NOT an effect of an inert attribute?
 
@@ -2505,6 +2512,8 @@ input.invalid {
 - [ ] Prevents the focus event from being fired when an element gains focus.
 - [ ] Hides the element and its content from assistive technologies by excluding them from the accessibility tree.
 
+[Reference: HTML inert attribute - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Global_attributes/inert)
+
 #### Q165. What elements does the accent-color property target?
 
 - [ ] Line break tags
@@ -2512,42 +2521,50 @@ input.invalid {
 - [x] Input tags
 - [ ] Image tags
 
-### Q164. In CSS, what does the line-height property control?
+[Reference: CSS Line Height Property](https://mimo.org/glossary/css/line-height)
+
+### Q166. In CSS, what does the line-height property control?
 
 - [ ] The width of the element.
 - [ ] The color of the text.
 - [ ] The spacing between characters.
 - [x] The height of the space between lines of text.
 
-### Q165. What is the purpose of the CSS visibility property?
+### Q167. What is the purpose of the CSS visibility property?
 
 - [ ] To control the order of elements within a flex container.
 - [ ] To adjust the space between the inner content and the border of an element.
 - [ ] To control the stacking order of elements in the z-axis.
 - [x] To control the visibility of an element.
 
-### Q166. Which CSS property is used to change the style of the cursor when it hovers over an element?
+[Reference: CSS Visibility Property - W3Schools](https://www.w3schools.com/cssref/pr_class_visibility.asp)
+
+### Q168. Which CSS property is used to change the style of the cursor when it hovers over an element?
 
 - [ ] cursor-style
 - [ ] mouse-pointer
 - [ ] pointer-type
 - [x] cursor
 
-### Q167. What is the purpose of the CSS outline property?
+### Q169. What is the purpose of the CSS outline property?
 
 - [ ] To control the width of an element's border.
 - [ ] To change the background color of an element.
 - [x] To create a visible outline around an element, which is often used for accessibility or highlighting.
 - [ ] To control the transparency of an element.
 
-#### Q168. What are the valid values of the text-align property?
+[Reference: CSS outline Property - W3Schools](https://www.w3schools.com/cssref/pr_outline.asp)
+
+#### Q170. What are the valid values of the text-align property?
 
 - [ ] left, bottom, top, right
 - [ ] left, right, up, bottom
 - [x] left, center, right, justify
 - [ ] side, justify, up, down
 
-#### Q169. What is the difference between visibility: hidden and display: none?
+[Reference: CSS text-align Property - W3Schools](https://www.w3schools.com/cssref/pr_text_text-align.asp)
+
+#### Q171. What is the difference between visibility: hidden and display: none?
 
 - [ ] Both will hide the element on the page, but display: none has greater browser support.
 - [ ] `display:none hides the elements but maintains the space it previously occupied. visibility:hidden will hide the element from view and remove it from the normal flow of the document`
@@ -2555,16 +2572,340 @@ input.invalid {
 - [ ] display: none removes the element from the document. It does not take up any space.
 - [ ] ` There is no difference; both will hide the element on the page`
 
-#### Q170. Which of the following is NOT a valid CSS selector?
+[Reference: CSS visibility:hidden vs display:none](https://www.w3schools.com/css/css_display_visibility.asp)
+
+#### Q172. Which of the following is NOT a valid CSS selector?
 
 - [ ] `p`
 - [ ] `.class`
 - [ ] `#id`
 - [x] `-`
+      [Reference: CSS Selectors – Cheat Sheet](https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/)
 
-#### Q171. What is the difference between a class and an id in CSS?
+  #### Q173. What is the difference between a class and an id in CSS?
+  - [x] IDs can only be applied to one HTML element, while classes can be used multiple times.
+  - [ ] IDs are denoted by a period (.) followed by the ID name, while classes use a hash (#).
+  - [ ] Classes have higher specificity in CSS than IDs.
+  - [ ] There is no difference between a class and an id.
 
-- [x] Classes can only be applied to one HTML element, while IDs can be used multiple times.
-- [ ] IDs are denoted by a period (.) followed by the ID name, while classes use a hash (#).
-- [ ] Classes have higher specificity in CSS than IDs.
-- [ ] There is no difference between a class and an id.
+[Reference: Difference Between Class and ID](https://www.w3schools.com/css/css_selectors.asp)
+
+#### Q174. Which CSS property is used to create a grid container?
+
+- [ ] `grid-template`
+- [x] `display: grid`
+- [ ] `grid-container`
+- [ ] `grid-layout`
+
+[Reference CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+
+#### Q175. What is the correct syntax for CSS custom properties (variables)?
+
+- [ ] `$primary-color: blue;`
+- [x] `--primary-color: blue;`
+- [ ] `@primary-color: blue;`
+- [ ] `var-primary-color: blue;`
+
+[Reference CSS Custom Properties](https://developer.mozilla.org/en-US/docs/Web/CSS/--*)
+
+#### Q176. Which flexbox property is used to control the alignment of items along the main axis?
+
+- [ ] `align-items`
+- [x] `justify-content`
+- [ ] `flex-direction`
+- [ ] `align-content`
+
+[Reference Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+
+#### Q177. What does the `fr` unit represent in CSS Grid?
+
+- [ ] Fixed ratio
+- [x] Fractional unit
+- [ ] Frame rate
+- [ ] Font ratio
+
+```css
+grid-template-columns: 1fr 2fr 1fr;
+```
+
+[Reference CSS Grid fr unit](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#the_fr_unit)
+
+#### Q178. Which CSS property is used to create smooth transitions between property changes?
+
+- [ ] `animation`
+- [x] `transition`
+- [ ] `transform`
+- [ ] `ease`
+
+[Reference CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions)
+
+#### Q179. What is the purpose of the `clamp()` function in CSS?
+
+- [ ] To hide content
+- [x] To set a value between a minimum and maximum range
+- [ ] To create animations
+- [ ] To validate CSS
+
+```css
+font-size: clamp(1rem, 2.5vw, 2rem);
+```
+
+[Reference CSS clamp()](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp)
+
+#### Q180. Which CSS selector targets the first child element?
+
+- [ ] `:first`
+- [x] `:first-child`
+- [ ] `:child(1)`
+- [ ] `:nth(1)`
+
+[Reference CSS :first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child)
+
+#### Q181. What does the `aspect-ratio` property do?
+
+- [ ] Changes the image quality
+- [x] Sets the preferred aspect ratio for an element
+- [ ] Adjusts the viewport ratio
+- [ ] Controls the screen ratio
+
+[Reference CSS aspect-ratio](https://developer.mozilla.org/en-US/docs/Web/CSS/aspect-ratio)
+
+#### Q182. Which CSS property is used to create a sticky element?
+
+- [ ] `position: fixed`
+- [x] `position: sticky`
+- [ ] `position: absolute`
+- [ ] `position: relative`
+
+[Reference CSS position: sticky](https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky)
+
+#### Q183. What is the correct syntax for CSS Grid areas?
+
+```css
+grid-template-areas:
+  'header header header'
+  'sidebar main main'
+  'footer footer footer';
+```
+
+- [x] The above syntax is correct
+- [ ] Use square brackets instead of quotes
+- [ ] Use commas between area names
+- [ ] Use semicolons between rows
+
+[Reference CSS Grid Template Areas](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas)
+
+#### Q184. Which CSS function is used to calculate values?
+
+- [ ] `compute()`
+- [x] `calc()`
+- [ ] `calculate()`
+- [ ] `math()`
+
+```css
+width: calc(100% - 20px);
+```
+
+[Reference CSS calc()](https://developer.mozilla.org/en-US/docs/Web/CSS/calc)
+
+#### Q185. What does the `gap` property do in CSS Grid and Flexbox?
+
+- [ ] Creates gaps in text
+- [x] Sets the space between grid items or flex items
+- [ ] Creates empty elements
+- [ ] Adjusts line height
+
+[Reference CSS gap](https://developer.mozilla.org/en-US/docs/Web/CSS/gap)
+
+#### Q186. Which CSS property is used to control the stacking order of elements?
+
+- [ ] `stack-order`
+- [x] `z-index`
+- [ ] `layer`
+- [ ] `depth`
+
+[Reference CSS z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index)
+
+#### Q187. What is the purpose of the `contain` property in CSS?
+
+- [ ] To hide overflow content
+- [x] To optimize rendering performance by containing layout, style, paint, or size
+- [ ] To create containers
+- [ ] To validate content
+
+[Reference CSS contain](https://developer.mozilla.org/en-US/docs/Web/CSS/contain)
+
+#### Q188. Which CSS selector targets elements based on their attribute values using wildcards?
+
+- [ ] `[attr="value"]`
+- [x] `[attr*="value"]`
+- [ ] `[attr~="value"]`
+- [ ] `[attr|="value"]`
+
+```css
+/* Selects elements where href contains "example" */
+a[href*='example'] {
+  color: red;
+}
+```
+
+[Reference CSS Attribute Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors)
+
+#### Q189. What does the `object-fit` property control?
+
+- [ ] Object positioning
+- [x] How replaced content should be resized to fit its container
+- [ ] Object visibility
+- [ ] Object rotation
+
+[Reference CSS object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)
+
+#### Q190. Which CSS property is used to create rounded corners?
+
+- [ ] `corner-radius`
+- [x] `border-radius`
+- [ ] `round-corners`
+- [ ] `radius`
+
+[Reference CSS border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+
+#### Q191. What is the purpose of the `will-change` property?
+
+- [ ] To change element content
+- [x] To hint to the browser about upcoming changes for optimization
+- [ ] To force changes
+- [ ] To prevent changes
+
+[Reference CSS will-change](https://developer.mozilla.org/en-US/docs/Web/CSS/will-change)
+
+#### Q192. Which CSS function is used to create color gradients?
+
+- [ ] `gradient()`
+- [x] `linear-gradient()` or `radial-gradient()`
+- [ ] `color-gradient()`
+- [ ] `blend()`
+
+[Reference CSS Gradients](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Images/Using_CSS_gradients)
+
+#### Q193. What does the `scroll-behavior` property control?
+
+- [ ] Scrollbar appearance
+- [x] The scrolling behavior for a scrolling box
+- [ ] Scroll speed
+- [ ] Scroll direction
+
+```css
+html {
+  scroll-behavior: smooth;
+}
+```
+
+[Reference CSS scroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior)
+
+#### Q194. Which CSS property is used to control text overflow?
+
+- [ ] `text-wrap`
+- [x] `text-overflow`
+- [ ] `overflow-text`
+- [ ] `text-clip`
+
+[Reference CSS text-overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-overflow)
+
+#### Q195. What is the purpose of the `backdrop-filter` property?
+
+- [ ] To filter background images
+- [x] To apply graphical effects to the area behind an element
+- [ ] To create drop shadows
+- [ ] To filter text content
+
+[Reference CSS backdrop-filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter)
+
+#### Q196. Which CSS property is used to create CSS animations?
+
+- [ ] `transition`
+- [x] `animation`
+- [ ] `transform`
+- [ ] `keyframes`
+
+[Reference CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
+
+#### Q197. What does the `place-items` property do in CSS Grid?
+
+- [ ] Places items in specific grid areas
+- [x] Shorthand for align-items and justify-items
+- [ ] Creates item placeholders
+- [ ] Positions items absolutely
+
+[Reference CSS place-items](https://developer.mozilla.org/en-US/docs/Web/CSS/place-items)
+
+#### Q198. Which CSS selector targets the last child element?
+
+- [ ] `:last`
+- [x] `:last-child`
+- [ ] `:child(last)`
+- [ ] `:final-child`
+
+[Reference CSS :last-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child)
+
+#### Q199. What is the purpose of the `isolation` property?
+
+- [ ] To isolate elements from the DOM
+- [x] To create a new stacking context
+- [ ] To prevent event propagation
+- [ ] To isolate CSS rules
+
+[Reference CSS isolation](https://developer.mozilla.org/en-US/docs/Web/CSS/isolation)
+
+#### Q200. Which CSS property controls the space between characters?
+
+- [ ] `character-spacing`
+- [x] `letter-spacing`
+- [ ] `char-space`
+- [ ] `text-spacing`
+
+[Reference CSS letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
+
+#### Q201. What does the `overscroll-behavior` property control?
+
+- [ ] Scrollbar behavior
+- [x] What happens when the user over-scrolls
+- [ ] Scroll speed
+- [ ] Scroll direction
+
+[Reference CSS overscroll-behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior)
+
+#### Q202. Which CSS property is used to create drop shadows?
+
+- [ ] `shadow`
+- [x] `box-shadow`
+- [ ] `drop-shadow`
+- [ ] `element-shadow`
+
+[Reference CSS box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+
+#### Q203. What is the purpose of the `resize` property?
+
+- [ ] To resize images automatically
+- [x] To control whether an element is resizable by the user
+- [ ] To resize fonts
+- [ ] To resize the viewport
+
+[Reference CSS resize](https://developer.mozilla.org/en-US/docs/Web/CSS/resize)
+
+#### Q204. Which CSS function is used to create custom shapes?
+
+- [ ] `shape()`
+- [x] `clip-path()`
+- [ ] `path()`
+- [ ] `polygon()`
+
+[Reference CSS clip-path](https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path)
+
+#### Q205. What does the `mix-blend-mode` property do?
+
+- [ ] Mixes colors randomly
+- [x] Defines how an element's content should blend with its background
+- [ ] Creates color transitions
+- [ ] Adjusts color saturation
+
+[Reference CSS mix-blend-mode](https://developer.mozilla.org/en-US/docs/Web/CSS/mix-blend-mode)

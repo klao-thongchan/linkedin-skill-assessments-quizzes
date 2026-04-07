@@ -276,9 +276,9 @@ cite {
 
 #### Q28. Which line of code, if applied to all flex items in a flex container, would cause each flex item to take up an equal share of the total width of the container? For example, if there are four items, they would get 25% of each.
 
-- [ ] `flex: 1 0 0;`
+- [x] `flex: 1 0 0;`
 - [ ] `flex: initial;`
-- [x] `flex: 1 1 auto;`
+- [ ] `flex: 1 1 auto;`
 - [ ] `flex: 1 0 auto;`
 
 #### Q29. A video on your webpage does not display and the console shows an error about mixed content. What is happening?
@@ -505,9 +505,9 @@ console.log(currencies);
 #### Q52. The flex property is often applied to flex items with a value of 1. Using flex: 1 is a shorthand - what does it unpack to?
 
 - [ ] flex: 0 0 100;
-- [ ] flex: 1 0 0;
+- [x] flex: 1 1 0;
 - [ ] flex: 0 0 auto;
-- [x] flex: 1 1 auto;
+- [ ] flex: 1 1 auto;
 
 [Source: stackoverflow](https://stackoverflow.com/questions/37386244/what-does-flex-1-mean)
 
@@ -688,21 +688,22 @@ console.log(currencies);
 - [ ] Set `width: 100%` on the images.
 - [ ] Set `resize: true` on the images.
 
-#### Q69. The CSS box model describes how the parts of a CSS box fit together and the size of the box. What is the actual width of the following box's visible part under the standard box model?
+#### Q69. Under the standard CSS box model, what is the total visible width of the element (content + padding + border), excluding margins?
 
 ```css
 box {
   width: 200px;
   padding: 10px;
+  border: 2px solid black;
   margin: 0 15px;
-  border: 2px 5px;
 }
-```
-
-- [ ] 230px
-- [x] 220px
+ ```md
+- [x] 224px
 - [ ] 200px
+- [ ] 220px
 - [ ] 260px
+
+
 
 #### Q70. How would you round the value 11.354 to the nearest full integer?
 
@@ -840,10 +841,10 @@ box {
 
 #### Q86. Which command has no Syntax error in CSS?
 
-- [ ] `p {font-size: 16em;}`
+- [x] `p {font-size: 16em;}`
 - [ ] `h2 {colour: yellow;}`
 - [ ] `div {border-radius: 5px}`
-- [x] `#my-div {background-color: blue;}`
+- [ ] `#my-div {background-color: blue;}`
 
 #### Q87. What type of CSS is the following snippet?
 
@@ -866,3 +867,39 @@ box {
 - [ ] color: inherit
 
 [Reference: W3 Schools](https://www.w3schools.com/cssref/css_initial.php#:~:text=The%20initial%20keyword%20is%20used,property%20to%20its%20default%20value.)
+
+#### Q89. What are the four core principles of web accessibility according to WCAG (Web Content Accessibility Guidelines)?
+
+- [ ] Perceivable, Operational, Universal, Responsive
+- [x] Perceivable, Operable, Understandable, Robust
+- [ ] Practical, Operable, Usable, Reliable
+- [ ] Portable, Organized, Understandable, Responsive
+
+[Reference: WCAG 2 Overview](https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility)
+
+#### Q90. Which element creates an ordered list, shown with numbers in the browser by default?
+
+- [x] `<ol>`
+- [ ] `<li>`
+- [ ] `<ul>`
+- [ ] `<list>`
+
+[Reference: MDN Web Docs - ol element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol)
+
+#### Q91. Which choice is not a valid value for the contain property?
+
+- [ ] content
+- [ ] strict
+- [ ] layout
+- [x] all
+
+[Reference: MDN Web Docs - contain property](https://developer.mozilla.org/en-US/docs/Web/CSS/contain)
+
+#### Q92. What is the default value of the display property of a `<div>` element in CSS?
+
+- [ ] inline
+- [x] block
+- [ ] inline-block
+- [ ] flex
+
+[Reference: MDN Web Docs - div element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)
